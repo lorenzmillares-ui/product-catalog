@@ -1,0 +1,64 @@
+.card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.card--out {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.category {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 4px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.stock.in {
+    color: #1a7f37;
+}
+
+.stock.out {
+    color: #b42318;
+}
+
+.card button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+.badge.new {
+    background: #16a34a;
+}
+
+.badge.sale {
+    background: #dc2626;
+}
