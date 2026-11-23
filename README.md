@@ -2,4 +2,4 @@ Props are inputs passed in from a parent and are read-only. State is data a comp
 Props belong to the parent. If a child changed them, the data flow would become unpredictable and the parent's data wouldn't match what's on screen.
 The parent passes a function down as a prop. The child calls it with data (like the title), so the function runs in the parent and updates the parent's state. The data moves up while the props still move down.
 React uses key to identify which item is which between renders. Without unique keys, React can re-render or reorder items wrongly, causing bugs like mismatched state or unnecessary updates, and it warns you in the console.
-children lets you put arbitrary JSX between a component's opening and closing tags, such as the New/Sale badge, so the parent controls part of the card's content without needing a dedicated prop.
+children lets you put arbitrary JSX between a component's opening and closing tags, such as the New/Sale badge, so the parent controls part of the card's content without needing a dedicated.
