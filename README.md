@@ -1,16 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Props are inputs passed in from a parent and are read-only. State is data a component owns and can change, and changing it triggers a re-render.
+Props belong to the parent. If a child changed them, the data flow would become unpredictable and the parent's data wouldn't match what's on screen.
+The parent passes a function down as a prop. The child calls it with data (like the title), so the function runs in the parent and updates the parent's state. The data moves up while the props still move down.
+React uses key to identify which item is which between renders. Without unique keys, React can re-render or reorder items wrongly, causing bugs like mismatched state or unnecessary updates, and it warns you in the console.
+children lets you put arbitrary JSX between a component's opening and closing tags, such as the New/Sale badge, so the parent controls part of the card's content without needing a dedicated prop.
